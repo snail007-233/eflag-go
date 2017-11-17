@@ -2,11 +2,11 @@ package eflag
 
 // func main() {
 // 	e := NewEasyFlag(5)
-// 	fmt.Println(e.zuhe(1))
-// 	fmt.Println(e.zuhe(2))
-// 	fmt.Println(e.zuhe(3))
-// 	fmt.Println(e.zuhe(4))
-// 	fmt.Println(e.zuhe(5))
+// 	fmt.Println(e.Zuhe(1))
+// 	fmt.Println(e.Zuhe(2))
+// 	fmt.Println(e.Zuhe(3))
+// 	fmt.Println(e.Zuhe(4))
+// 	fmt.Println(e.Zuhe(5))
 // 	fmt.Println(e.Search([]int{2}))
 // 	fmt.Println(e.Encode([]int{1, 2, 4, 8}))
 // 	fmt.Println(e.Decode(15))
@@ -78,7 +78,7 @@ func (e *EasyFlag) Search(search []int) (all []int) {
 	}
 	return
 }
-func (e *EasyFlag) zuhe(count int) (ret [][]int) {
+func (e *EasyFlag) Zuhe(count int) (ret [][]int) {
 	src := map[int]byte{}
 	for _, m := range e.src {
 		src[m] = 0

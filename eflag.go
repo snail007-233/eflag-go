@@ -65,7 +65,7 @@ func (e *EasyFlag) Search(search []int) (all []int) {
 		searchTotal |= v
 	}
 	for i := 1; i <= len(e.src); i++ {
-		tmp := e.zuhe(i)
+		tmp := e.Zuhe(i)
 		for _, v := range tmp {
 			total := 0
 			for _, vv := range v {

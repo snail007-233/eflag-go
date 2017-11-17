@@ -30,7 +30,7 @@ func NewEasyFlag(bitsCount int) EasyFlag {
 		ef.src = append(ef.src, 1<<uint(i-1))
 	}
 	for i := 1; i <= len(ef.src); i++ {
-		tmp := ef.zuhe(i)
+		tmp := ef.Zuhe(i)
 		for _, v := range tmp {
 			total := 0
 			for _, vv := range v {
